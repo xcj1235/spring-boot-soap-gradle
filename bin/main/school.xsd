@@ -26,5 +26,27 @@
 			<xs:element name="address" type="xs:string" />
 		</xs:sequence>
 	</xs:complexType>
+	<xs:element name="StudentDetailsRequest1">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name1" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 
+	<xs:element name="StudentDetailsResponse1">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Student1" type="tns:Student1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="Student1">
+		<xs:sequence>
+			<xs:element name="name1" type="xs:string" />
+			<xs:element name="standard1" type="xs:int" />
+			<xs:element name="address1" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
 </xs:schema>

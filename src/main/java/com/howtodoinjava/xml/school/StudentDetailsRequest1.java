@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Student" type="{http://www.howtodoinjava.com/xml/school}Student"/>
+ *         &lt;element name="name1" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "student"
+    "name1"
 })
-@XmlRootElement(name = "StudentDetailsResponse")
-public class StudentDetailsResponse {
+@XmlRootElement(name = "StudentDetailsRequest1")
+public class StudentDetailsRequest1 {
 
-    @XmlElement(name = "Student", required = true)
-    protected Student student;
+    @XmlElement(required = true)
+    protected String name1;
 
     /**
-     * studentプロパティの値を取得します。
+     * name1プロパティの値を取得します。
      * 
      * @return
      *     possible object is
-     *     {@link Student }
+     *     {@link String }
      *     
      */
-    public Student getStudent() {
-        return student;
+    public String getName1() {
+        return name1;
     }
 
     /**
-     * studentプロパティの値を設定します。
+     * name1プロパティの値を設定します。
      * 
      * @param value
      *     allowed object is
-     *     {@link Student }
+     *     {@link String }
      *     
      */
-    public void setStudent(Student value) {
-        this.student = value;
+    public void setName1(String value) {
+        this.name1 = value;
     }
 
 }

@@ -15,18 +15,18 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Student complex typeのJavaクラス。
+ * <p>Student1 complex typeのJavaクラス。
  * 
  * <p>次のスキーマ・フラグメントは、このクラス内に含まれる予期されるコンテンツを指定します。
  * 
  * <pre>
- * &lt;complexType name="Student">
+ * &lt;complexType name="Student1">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="standard" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="address" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="name1" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="standard1" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="address1" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,81 +36,81 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Student", propOrder = {
-    "name",
-    "standard",
-    "address"
+@XmlType(name = "Student1", propOrder = {
+    "name1",
+    "standard1",
+    "address1"
 })
-public class Student {
+public class Student1 {
 
     @XmlElement(required = true)
-    protected String name;
-    protected int standard;
+    protected String name1;
+    protected int standard1;
     @XmlElement(required = true)
-    protected String address;
+    protected String address1;
 
     /**
-     * nameプロパティの値を取得します。
+     * name1プロパティの値を取得します。
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getName() {
-        return name;
+    public String getName1() {
+        return name1;
     }
 
     /**
-     * nameプロパティの値を設定します。
+     * name1プロパティの値を設定します。
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setName(String value) {
-        this.name = value;
+    public void setName1(String value) {
+        this.name1 = value;
     }
 
     /**
-     * standardプロパティの値を取得します。
+     * standard1プロパティの値を取得します。
      * 
      */
-    public int getStandard() {
-        return standard;
+    public int getStandard1() {
+        return standard1;
     }
 
     /**
-     * standardプロパティの値を設定します。
+     * standard1プロパティの値を設定します。
      * 
      */
-    public void setStandard(int value) {
-        this.standard = value;
+    public void setStandard1(int value) {
+        this.standard1 = value;
     }
 
     /**
-     * addressプロパティの値を取得します。
+     * address1プロパティの値を取得します。
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getAddress() {
-        return address;
+    public String getAddress1() {
+        return address1;
     }
 
     /**
-     * addressプロパティの値を設定します。
+     * address1プロパティの値を設定します。
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setAddress(String value) {
-        this.address = value;
+    public void setAddress1(String value) {
+        this.address1 = value;
     }
 
 }
