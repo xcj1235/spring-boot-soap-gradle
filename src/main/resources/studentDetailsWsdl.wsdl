@@ -51,12 +51,10 @@
 </xs:schema>
   </wsdl:types>
   <wsdl:message name="StudentDetailsRequest">
-    <wsdl:part element="tns:StudentDetailsRequest" name="StudentDetailsRequest">
-    </wsdl:part>
+    <wsdl:part element="tns:StudentDetailsRequest" name="StudentDetailsRequest" />
   </wsdl:message>
   <wsdl:message name="StudentDetailsResponse">
-    <wsdl:part element="tns:StudentDetailsResponse" name="StudentDetailsResponse">
-    </wsdl:part>
+    <wsdl:part element="tns:StudentDetailsResponse" name="StudentDetailsResponse" />
   </wsdl:message>
   <wsdl:portType name="StudentDetailsPort">
     <wsdl:operation name="StudentDetails">

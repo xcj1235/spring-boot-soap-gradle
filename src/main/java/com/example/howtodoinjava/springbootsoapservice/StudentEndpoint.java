@@ -1,5 +1,7 @@
 package com.example.howtodoinjava.springbootsoapservice;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
@@ -16,6 +18,7 @@ public class StudentEndpoint
 {
     private static final String NAMESPACE_URI = "http://www.howtodoinjava.com/xml/school";
 
+    private static final Logger logger = LoggerFactory.getLogger(StudentEndpoint.class);
     private StudentRepository StudentRepository;
 
     @Autowired
@@ -29,15 +32,8 @@ public class StudentEndpoint
         StudentDetailsResponse response = new StudentDetailsResponse();
         response.setStudent(StudentRepository.findStudent(request.getName()));
 
+        logger.info(request.getName());
         return response;
     }
-    
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "StudentDetailsRequest1")
-    @ResponsePayload
-    public StudentDetailsResponse1 getStudent1(@RequestPayload StudentDetailsRequest1 request1) {
-        StudentDetailsResponse1 response = new StudentDetailsResponse1();
-        response.setStudent1(StudentRepository.findStudent1(request1.getName1()));
 
-        return response;
-    }
 }

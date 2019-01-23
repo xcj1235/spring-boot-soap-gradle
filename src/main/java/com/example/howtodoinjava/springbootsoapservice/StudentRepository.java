@@ -5,6 +5,8 @@ import java.util.Map;
 
 import javax.annotation.PostConstruct;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
@@ -15,7 +17,7 @@ import com.howtodoinjava.xml.school.Student1;
 public class StudentRepository {
     private static final Map<String, Student> students = new HashMap<>();
     private static final Map<String, Student1> students1 = new HashMap<>();
-
+    private static final Logger logger = LoggerFactory.getLogger(StudentRepository.class);
     @PostConstruct
     public void initData() {
 
@@ -46,11 +48,17 @@ public class StudentRepository {
 
     public Student findStudent(String name) {
         Assert.notNull(name, "The Student's name must not be null");
+        logger.info(name+"-----------000----------");
+        logger.info(name+"-----------000----------");
+        logger.info(name+"-----------000----------");
         return students.get(name);
     }
     
     public Student1 findStudent1(String name) {
         Assert.notNull(name, "The Student's name must not be null");
+        logger.info(name+"-----------111----------");
+        logger.info(name+"-----------111----------");
+        logger.info(name+"-----------111----------");
         return students1.get(name);
     }
 }

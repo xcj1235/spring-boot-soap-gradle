@@ -9,6 +9,5 @@ public class SpringBootSoapServerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootSoapServerApplication.class, args);
 	}
-
 }
 
