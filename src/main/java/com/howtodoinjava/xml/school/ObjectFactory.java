@@ -1,8 +1,8 @@
 //
-// このファイルは、JavaTM Architecture for XML Binding(JAXB) Reference Implementation、v2.2.8-b130911.1802によって生成されました 
+// このファイルは、JavaTM Architecture for XML Binding(JAXB) Reference Implementation、v2.2.11によって生成されました 
 // <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>を参照してください 
 // ソース・スキーマの再コンパイル時にこのファイルの変更は失われます。 
-// 生成日: 2019.01.21 時間 11:53:41 PM JST 
+// 生成日: 2019.01.24 時間 10:04:40 PM JST 
 //
 
 
@@ -37,11 +37,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link StudentDetailsRequest1 }
+     * Create an instance of {@link StudentDetailsRequest }
      * 
      */
-    public StudentDetailsRequest1 createStudentDetailsRequest1() {
-        return new StudentDetailsRequest1();
+    public StudentDetailsRequest createStudentDetailsRequest() {
+        return new StudentDetailsRequest();
     }
 
     /**
@@ -61,11 +61,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link StudentDetailsRequest }
+     * Create an instance of {@link StudentDetailsRequest1 }
      * 
      */
-    public StudentDetailsRequest createStudentDetailsRequest() {
-        return new StudentDetailsRequest();
+    public StudentDetailsRequest1 createStudentDetailsRequest1() {
+        return new StudentDetailsRequest1();
     }
 
     /**

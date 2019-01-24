@@ -3,6 +3,7 @@
 	<name>spring-boot-soap-gradle</name>
 	<comment></comment>
 	<projects>
+		<project>test</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

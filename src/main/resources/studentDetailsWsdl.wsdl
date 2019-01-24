@@ -78,7 +78,7 @@
   </wsdl:binding>
   <wsdl:service name="StudentDetailsPortService">
     <wsdl:port binding="tns:StudentDetailsPortSoap11" name="StudentDetailsPortSoap11">
-      <soap:address location="http://localhost:8080/service/student-details"/>
+      <soap:address location="http://localhost:8080/ws/studentDetailsWsdlResponse.wsdl"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

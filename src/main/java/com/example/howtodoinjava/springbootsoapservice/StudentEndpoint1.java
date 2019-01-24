@@ -29,6 +29,7 @@ public class StudentEndpoint1
         StudentDetailsResponse1 response = new StudentDetailsResponse1();
         response.setStudent1(StudentRepository.findStudent1(request1.getName1()));
         logger.info(request1.getName1());
+        
         return response;
     }
 }

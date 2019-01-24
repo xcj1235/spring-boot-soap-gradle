@@ -1,8 +1,8 @@
 //
-// ‚±‚Ìƒtƒ@ƒCƒ‹‚ÍAJavaTM Architecture for XML Binding(JAXB) Reference ImplementationAv2.2.11‚É‚æ‚Á‚Ä¶¬‚³‚ê‚Ü‚µ‚½ 
-// <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢ 
-// ƒ\[ƒXEƒXƒL[ƒ}‚ÌÄƒRƒ“ƒpƒCƒ‹‚É‚±‚Ìƒtƒ@ƒCƒ‹‚Ì•ÏX‚Í¸‚í‚ê‚Ü‚·B 
-// ¶¬“ú: 2019.01.23 ŠÔ 11:51:44 PM JST 
+// ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã¯ã€JavaTM Architecture for XML Binding(JAXB) Reference Implementationã€v2.2.11ã«ã‚ˆã£ã¦ç”Ÿæˆã•ã‚Œã¾ã—ãŸ 
+// <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>ã‚’å‚ç…§ã—ã¦ãã ã•ã„ 
+// ã‚½ãƒ¼ã‚¹ãƒ»ã‚¹ã‚­ãƒ¼ãƒã®å†ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã«ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã®å¤‰æ›´ã¯å¤±ã‚ã‚Œã¾ã™ã€‚ 
+// ç”Ÿæˆæ—¥: 2019.01.24 æ™‚é–“ 11:57:06 PM JST 
 //
 
 
@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Student complex type‚ÌJavaƒNƒ‰ƒXB
+ * <p>Student complex typeã®Javaã‚¯ãƒ©ã‚¹ã€‚
  * 
- * <p>Ÿ‚ÌƒXƒL[ƒ}Eƒtƒ‰ƒOƒƒ“ƒg‚ÍA‚±‚ÌƒNƒ‰ƒX“à‚ÉŠÜ‚Ü‚ê‚é—\Šú‚³‚ê‚éƒRƒ“ƒeƒ“ƒc‚ğw’è‚µ‚Ü‚·B
+ * <p>æ¬¡ã®ã‚¹ã‚­ãƒ¼ãƒãƒ»ãƒ•ãƒ©ã‚°ãƒ¡ãƒ³ãƒˆã¯ã€ã“ã®ã‚¯ãƒ©ã‚¹å†…ã«å«ã¾ã‚Œã‚‹äºˆæœŸã•ã‚Œã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚’æŒ‡å®šã—ã¾ã™ã€‚
  * 
  * <pre>
  * &lt;complexType name="Student"&gt;
@@ -50,7 +50,7 @@ public class Student {
     protected String address;
 
     /**
-     * nameƒvƒƒpƒeƒB‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * nameãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      * 
      * @return
      *     possible object is
@@ -62,7 +62,7 @@ public class Student {
     }
 
     /**
-     * nameƒvƒƒpƒeƒB‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * nameãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      * 
      * @param value
      *     allowed object is
@@ -74,7 +74,7 @@ public class Student {
     }
 
     /**
-     * standardƒvƒƒpƒeƒB‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * standardãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      * 
      */
     public int getStandard() {
@@ -82,7 +82,7 @@ public class Student {
     }
 
     /**
-     * standardƒvƒƒpƒeƒB‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * standardãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      * 
      */
     public void setStandard(int value) {
@@ -90,7 +90,7 @@ public class Student {
     }
 
     /**
-     * addressƒvƒƒpƒeƒB‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * addressãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      * 
      * @return
      *     possible object is
@@ -102,7 +102,7 @@ public class Student {
     }
 
     /**
-     * addressƒvƒƒpƒeƒB‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * addressãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      * 
      * @param value
      *     allowed object is

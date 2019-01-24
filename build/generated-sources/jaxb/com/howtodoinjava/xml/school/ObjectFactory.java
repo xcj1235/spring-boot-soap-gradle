@@ -1,8 +1,8 @@
 //
-// ���̃t�@�C���́AJavaTM Architecture for XML Binding(JAXB) Reference Implementation�Av2.2.11�ɂ���Đ�������܂��� 
-// <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>���Q�Ƃ��Ă������� 
-// �\�[�X�E�X�L�[�}�̍ăR���p�C�����ɂ��̃t�@�C���̕ύX�͎����܂��B 
-// ������: 2019.01.23 ���� 11:51:44 PM JST 
+// このファイルは、JavaTM Architecture for XML Binding(JAXB) Reference Implementation、v2.2.11によって生成されました 
+// <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>を参照してください 
+// ソース・スキーマの再コンパイル時にこのファイルの変更は失われます。 
+// 生成日: 2019.01.24 時間 11:57:06 PM JST 
 //
 
 

@@ -24,7 +24,7 @@ repositories {
 task genJaxb {
     ext.sourcesDir = "${buildDir}/generated-sources/jaxb"
     ext.classesDir = "${buildDir}/classes/jaxb"
-    ext.schema = "src/main/resources/school.xsd"
+    ext.schema = "src/main/resources/studentDetailsWsdl.wsdl"
 
     outputs.dir classesDir
 
@@ -35,12 +35,12 @@ task genJaxb {
             mkdir(dir: sourcesDir)
             mkdir(dir: classesDir)
 
-            xjc(destdir: sourcesDir, schema: schema) {
-             //   arg(value: "-xsd")
+            xjc(destdir: sourcesDir, schema: schema ,encoding:"UTF-8") {
+                arg(value: "-wsdl")
                 produces(dir: sourcesDir, includes: "**/*.java")
             }
 
-            javac(destdir: classesDir, source: 11, target: 11, debug: true,
+            javac(destdir: classesDir, source: 11, target: 11, debug: true,encoding:"UTF-8",
                     debugLevel: "lines,vars,source",
                     classpath: configurations.jaxb.asPath) {
                 src(path: sourcesDir)
@@ -67,7 +67,7 @@ configurations {
     jaxb
 }
 
-jar {
+bootJar {
     baseName = 'gs-producing-web-service'
     version =  '0.1.0'
     from genJaxb.classesDir
@@ -78,10 +78,14 @@ sourceCompatibility = '11'
 targetCompatibility = '11'
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web-services")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
-    compile("wsdl4j:wsdl4j:1.6.1")
-    jaxb("org.glassfish.jaxb:jaxb-xjc:2.2.11")
+	compile 'com.sun.xml.messaging.saaj:saaj-impl:1.5.0'
+    compile 'org.springframework.boot:spring-boot-starter-web-services'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    compile 'wsdl4j:wsdl4j:1.6.1'
+    jaxb 'org.glassfish.jaxb:jaxb-xjc:2.2.11'
+    compile 'javax.xml.bind:jaxb-api:2.3.1'
+	compile 'javax.activation:javax.activation-api:1.2.0'
+	compile 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
     compile(files(genJaxb.classesDir).builtBy(genJaxb))
 }
 // end::dependencies[]
