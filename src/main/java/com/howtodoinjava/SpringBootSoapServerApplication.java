@@ -1,4 +1,4 @@
-package com.howtodoinjava.endpoint;
+package com.howtodoinjava;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

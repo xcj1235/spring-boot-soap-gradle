@@ -1,4 +1,4 @@
-package com.howtodoinjava.endpoint;
+package com.howtodoinjava;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
@@ -15,7 +15,8 @@ import org.springframework.ws.wsdl.wsdl11.Wsdl11Definition;
 @Configuration
 public class Config extends WsConfigurerAdapter
 {
-    @Bean
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+	@Bean
     public ServletRegistrationBean messageDispatcherServlet(ApplicationContext applicationContext)
     {
         MessageDispatcherServlet servlet = new MessageDispatcherServlet();
